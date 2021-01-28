@@ -1,0 +1,24 @@
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.navbar__menu li {
+    display: inline-block;
+}
+
+.navbar__menu .menu__link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: $lightGrey;
+}
+
+.navbar__menu .menu__link:hover {
+    border-radius: 30px;
+    background: $orange;
+    color: $white;
+    transition: ease 0.3s all;
+}

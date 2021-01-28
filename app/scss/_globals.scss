@@ -1,0 +1,56 @@
+//text styles
+body {
+    background: $darkgrey;
+    background: linear-gradient(0deg, $lightblue, $pink);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: $white;
+}
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: $fontSmall;
+    margin: 2em 1rem;
+}
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: $fontLarge;
+        margin: 2em 4rem 1em;
+    }
+}
+h2 {
+    border-bottom: 1px solid $black;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: $fontSmall;
+    color: $white;
+}
+p {
+    line-height: 1.6em;
+    color: $white;
+}
+//page styles
+main {
+    margin: 10vh 1em 10vh;
+}
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+section {
+    position: relative;
+    min-height: 80vh;
+}
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}

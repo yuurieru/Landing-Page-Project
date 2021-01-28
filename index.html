@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>yuurieru's DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="dist/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu anchors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header id="topPage" data-nav="Top of Page" class="main__hero">
+        <h1>yuurieru's Blog </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Anime" class="your-active-class">
+      <div class="landing__container">
+        <h2>Anime</h2>
+        <p>Anime (Japanese: アニメ, IPA: [aɲime] (About this soundlisten)) is hand-drawn and computer animation originating from Japan. In Japanese, anime, a term derived from the English word animation, describes all animated works, regardless of style or origin. Outside of Japan, anime refers specifically to animation produced in Japan, or to its common style, which has since been adopted by a minority of works produced in other countries.[1] </p>
+
+        <p>The earliest commercial Japanese animations date to 1917. A characteristic art style emerged in the 1960s with the works of cartoonist Osamu Tezuka and spread in following decades, developing a large domestic audience. Anime is distributed theatrically, through television broadcasts, directly to home media, and over the Internet. In addition to original works, anime are often adaptations of Japanese comics (manga), light novels, or video games. It is classified into numerous genres targeting various broad and niche audiences.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Manga">
+      <div class="landing__container">
+        <h2>Manga</h2>
+        <p>Manga (Japanese: 漫画 [maŋga])[a] are comics or graphic novels originating from Japan. Most manga conform to a style developed in Japan in the late 19th century,[1] and the form has a long prehistory in earlier Japanese art.[2] The term manga is used in Japan to refer to both comics and cartooning. Outside of Japan, the word is typically used to refer to comics originally published in the country.[3] </p>
+
+        <p>In Japan, people of all ages read manga. The medium includes works in a broad range of genres: action, adventure, business and commerce, comedy, detective, drama, historical, horror, mystery, romance, science fiction and fantasy, erotica (hentai), sports and games, and suspense, among others.[4][5] Many manga are translated into other languages.[6] Since the 1950s, manga has become an increasingly major part of the Japanese publishing industry.[7] By 1995, the manga market in Japan was valued at ¥586.4 billion ($6–7 billion),[8] with annual sales of 1.9 billion manga books and manga magazines in Japan (equivalent to 15 issues per person).[9] Manga have also gained a significant worldwide audience.[10] In 2008, in the U.S. and Canada, the manga market was valued at $175 million. According to Jean-Marie Bouissou, Manga represented 38% of the French comics market in 2005.[11][unreliable source?] This is equivalent to approximately ten times that of the United States and was valued at about €460 million ($640 million).[12] In Europe and the Middle East, the market was valued at $250 million in 2012.[13]</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Light Novels">
+      <div class="landing__container">
+        <h2>Light Novels</h2>
+        <p>A light novel (ライトノベル, raito noberu) is a style of Japanese young adult novel primarily targeting high school and middle school students.[1][2] The term "light novel" is a wasei-eigo, or a Japanese term formed from words in the English language. Light novels are often called ranobe (ラノベ)[3] or, in English, LN. The average length of a light novel is about 50,000 words,[4] close to the minimum expected for a Western novel,[5] and they are usually published in bunkobon size (A6, 10.5 cm × 14.8 cm), often with dense publishing schedules. </p>
+
+        <p>Light novels are commonly illustrated in a manga art style, and are often adapted into manga and anime. While most light novels are published only as books, some have their chapters first serialized in anthology magazines before being collected, similar to how manga is published. </p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Music" class="your-active-class">
+        <div class="landing__container">
+          <h2>Music</h2>
+          <p>The opening and credits sequences of most anime television episodes are accompanied by Japanese pop or rock songs, often by reputed bands. They may be written with the series in mind, but are also aimed at the general music market, and therefore often allude only vaguely or not at all to the themes or plot of the series. Pop and rock songs are also sometimes used as incidental music ("insert songs") in an episode, often to highlight particularly important scenes.[60]</p>
+        </div>
+      </section>
+      <section id="section5" data-nav="Cosplay" class="your-active-class">
+        <div class="landing__container">
+          <h2>Cosplay</h2>
+          <p>Cosplay, a portmanteau of the words "costume play", is an activity and performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character.[1] Cosplayers often interact to create a subculture, and a broader use of the term "cosplay" applies to any costumed role-playing in venues apart from the stage. Any entity that lends itself to dramatic interpretation may be taken up as a subject. Favorite sources include anime, cartoons, comic books, manga, television series, and video games. </p>
+  
+          <p>Cosplay grew out of the practice of fan costuming at science fiction conventions, beginning with Morojo's "futuristicostumes" created for the 1st World Science Fiction Convention held in New York City in 1939. The Japanese term "cosplay" (コスプレ, kosupure) was coined in 1984. A rapid growth in the number of people cosplaying as a hobby since the 1990s has made the phenomenon a significant aspect of popular culture in Japan, as well as in other parts of East Asia and in the Western world. Cosplay events are common features of fan conventions, and today there are many dedicated conventions and competitions, as well as social networks, websites, and other forms of media centered on cosplay activities. Cosplay is very popular among all genders, and it is not unusual to see genders switched. </p>
+        </div>
+      </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="/app/js/script.js"></script>
+</body>
+</html>
