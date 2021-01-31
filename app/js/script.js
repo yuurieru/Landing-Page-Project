@@ -1,11 +1,15 @@
 //put sections in variable
 const sections = document.querySelectorAll('section');
+/*
+---This wasn't needed
 const buttons = document.getElementById('topBtn');
+*/
 
 //link all buttons to top of page
 function topFunction(){
     document.documentElement.scrollTop=0;
 }
+
 //create navbar from sections names
 function makeNav() {
     for (let name of sections) {
@@ -17,6 +21,7 @@ function makeNav() {
         document.querySelector('#navbar__list').appendChild(navList);
     }
 };
+
 //helper function for active state
 function viewPortBounding (element) {
     return (element.getBoundingClientRect().top);
