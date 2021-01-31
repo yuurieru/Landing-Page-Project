@@ -5,9 +5,11 @@ const sections = document.querySelectorAll('section');
 const buttons = document.getElementById('topBtn');
 */
 
-//link all buttons to top of page
+//smooth scroll on button click
 function topFunction(){
-    document.documentElement.scrollTop=0;
+    window.scroll({ 
+        top: 0, behavior: 'smooth'
+    });
 }
 
 //create navbar from sections names
@@ -46,3 +48,4 @@ function activeState() {
 
 //call function
 makeNav();
+
