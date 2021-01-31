@@ -1,0 +1,18 @@
+//top button css
+#topBtn{
+    background-color: $pink;
+    border: none;
+    border-radius: 1em;
+    color: $white;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $fontSmall;
+    cursor: pointer;
+}
+
+//dark grey color on hover
+#topBtn:hover{
+    background-color: $darkgrey;
+}
